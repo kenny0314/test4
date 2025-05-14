@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Job Displacement Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+
+  <div id="splash" class="screen">
+    <h1>AI Job Displacement Quiz</h1>
+    <p>Test your knowledge on jobs at risk of automation.</p>
+    <button id="startBtn">Start Quiz</button>
+  </div>
+
+  <div id="quiz" class="screen hidden">
+    <h1>AI Job Displacement Quiz</h1>
+    <div id="timer">Time Left: <span id="time">15</span>s</div>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button id="next" disabled>Next</button>
+  </div>
+
+  <div id="result" class="screen hidden">
+    <h2>Your Score</h2>
+    <p id="scoreText"></p>
+    <button id="restart">Try Again</button>
+    <button id="backToStart">Back to Start</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
